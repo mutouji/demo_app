@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-#source 'https://ruby.taobao.org'
+#source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 
 
 
@@ -34,6 +34,15 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.12'
   gem 'rspec-rails', '3.5.2'
+  gem 'guard-rspec', '4.7.3'
+
+  # gem 'spork-rails', '4.0.0'
+  # gem 'guard-spork', '2.1.0'
+  # gem 'childprocess', '0.5.9'
+  gem 'ruby_dep', '1.5.0'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork', '2.1.0'
+  gem 'childprocess', '0.5.9'
 end
 
 group :development do
@@ -47,6 +56,7 @@ end
 group :test do
   gem 'selenium-webdriver', '~> 2.53.0'
   gem 'capybara', '~> 2.8.0'
+  gem 'libnotify', '0.9.1'
 end
 
 group :doc do
